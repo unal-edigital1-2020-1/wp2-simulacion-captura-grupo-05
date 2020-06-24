@@ -52,7 +52,7 @@ module test_cam(
 parameter CAM_SCREEN_X = 320; //160
 parameter CAM_SCREEN_Y = 240; //120
 
-localparam AW = 17; // LOG2(CAM_SCREEN_X*CAM_SCREEN_Y)
+localparam AW = 15; // LOG2(CAM_SCREEN_X*CAM_SCREEN_Y)
 localparam DW = 12;
 
 // El color es RGB 332
