@@ -84,9 +84,9 @@ wire [8:0]VGA_posY;		   // Determinar la pos de memoria que viene del VGA
 la pantalla VGA es RGB 444, pero el almacenamiento en memoria se hace 332
 por lo tanto, los bits menos significactivos deben ser cero
 **************************************************************************** */
-assign VGA_R = {data_RGB332[7:5],1'b0};
-assign VGA_G = {data_RGB332[4:2],1'b0};
-assign VGA_B = {data_RGB332[1:0],2'b00};
+	assign VGA_R = {data_RGB332[11:8]};
+	assign VGA_G = {data_RGB332[7:4]};
+	assign VGA_B = {data_RGB332[3:0]};
 
 /* ****************************************************************************
 Asignacion de las seales de control xclk pwdn y reset de la camara 
